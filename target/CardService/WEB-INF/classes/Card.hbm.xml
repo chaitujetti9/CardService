@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name="com.jetti.rest.Card" table="Card">
+      <meta attribute="class-description">
+         This class contains the card detail. 
+      </meta>
+      <id name="cardId" type="int" column="cardId">
+         <generator class="native"/>
+      </id>
+      <property name="cardNumber" column="cardNumber" type="string"/>
+      <property name="nameOnCard" column="nameoncard" type="string"/>
+      <property name="expiryDate" column="expirydate" type="int"/>
+      <property name="cvv" column="cvv" type="int"/>
+      <property name ="cardBalance" column="cardbalance" type = "int"/>   
+  
+   </class>
+
+</hibernate-mapping>
